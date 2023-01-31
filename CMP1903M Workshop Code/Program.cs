@@ -27,16 +27,17 @@ namespace CMP1903MWorkshopCode
             //(-4, -5) and (-1, -1) describe two points. What is the distance between them?
             int x1 = -4;
             int y1 = -4;
-
+            
             int x2 = -1;
             int y2 = -1;
-
-            double answer1 = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
+            
+            double answer1 = Math.Sqrt((Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2)));
 
             //Problem 2
             //What is the denominator of the slope between these points?
 
-            double answer2 = y2 - y1 / x2 - x1;
+            double answer2 = x2 - x1;
+            
 
             //Problem 3
             //What is the greatest common divisor (GCD) of 1124 and 136?
