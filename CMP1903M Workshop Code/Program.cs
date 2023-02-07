@@ -4,57 +4,61 @@ namespace CMP1903MWorkshopCode
 {
     class Program
     {
-        private int GCD(int a, int b)
-        {
-            if (a == 0)
-                return b;
-            return GCD(b % a, a);
-        }
-
-        private int SumOfFirstTenNaturalNumbers()
-        {
-            int sum = 0;
-            for (int i = 1; i <= 10; i++)
-            {
-                sum += i;
-            }
-            return sum;
-        }
-        
         static void Main(string[] args)
         {
-            //Problem 1
-            //(-4, -5) and (-1, -1) describe two points. What is the distance between them?
-            int x1 = -4;
-            int y1 = -4;
+            //Week 2
+            //EITHER:
+            //Read in the text file if you want (or are able) [HINT: read into a list of strings]
+            //Split the first four numbers
+            List<string> streets = new List<string>();
+
+
+
+            //OR:
+            //Manual (check each street code individually without reading them in automatically)
+            //long, tedious, etc, etc
+            //7778[8] is a correct street code
+            //Second two variables here are to use when calculating the checksum
+            int streetCode = 7778;
+            int checkSum = 8;
+            int total = 1;
+            int total2 = 0;
+          
+
+            //Multiply all the numbers together in the 4 digit code (7*7*7*8)
+            //Can do it by using the mod '%' operator and the divide '/' operator
+            //Reduce streetCode by 1 digit each time through the loop
+            while(streetCode > 0)
+            {
+                
+
+            }
+
+
+            //Add the digits of the multiplication total together
+            //infinite loop until the total gets to one digit - the checksum
+            //Use 'break;' to break out of the loop
+            while (true)
+            {
+                //Do the same as above, adding not multiplying
+                while (total > 0)
+                {
+                    
+
+                }
+
+                //Check if total2 is 2 digits or more
+                //If not, break out of the loop
+                if (total2 > 9) 
+                { 
+                    
+                }
+                else { break; }
+            }
+  
+            //Check if the final checksum is the same as the checksum in the street code.
             
-            int x2 = -1;
-            int y2 = -1;
-            
-            double answer1 = Math.Sqrt((Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2)));
 
-            //Problem 2
-            //What is the denominator of the slope between these points?
-
-            double answer2 = x2 - x1;
-            
-
-            //Problem 3
-            //What is the greatest common divisor (GCD) of 1124 and 136?
-
-            var mc = new Program();      
-            int answer3 = mc.GCD(1124, 136);
-
-            //Problem 4
-            //What is the remainder, when you divide the square of the sum of the first ten natural numbers by ten?
-            
-            int answer4 = mc.SumOfFirstTenNaturalNumbers() % 10;
-
-            //Write answers
-            Console.WriteLine("The distance between the two points is " + answer1);
-            Console.WriteLine("The denominator of the slope between the two points is " + answer2);
-            Console.WriteLine("The greatest common divisor of 1124 and 136 is " + answer3);
-            Console.WriteLine("The remainder of the square of the sum of the first ten natural numbers divided by ten is " + answer4);
         }
     }
 }
